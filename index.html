@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira do Conhecimento</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Corrija o atributo rel -->
+</head>
+<body>
+
+    <header>
+        <div class="cabeçalho">
+           
+            <div class="cabeçalho__titulo">
+                 Bem vindos à Feira do Conhecimento.
+            </div>     
+            <div id="resolucao" class="cabeçalho__conteudo">
+            A resolução da tela é:<br> <span id="resolucao-texto"></span>
+            </div>
+        </div>
+    </header>
+    <div id="video-container">
+        <video id="meu-video">
+            <source src="Feira_do_conhecimento.mp4" type="video/mp4" alt="Seu navegador não suporta o elemento de vídeo.">
+        </video>
+    </div>
+    <footer class="rodapé">
+        <div class="rodapé__controle">
+            <button onclick="playPause()">Play/Pause</button>
+            <input type="range" id="volumeRange" min="0" max="1" step="0.1" onchange="setVolume(this.value)">        
+        </div>
+    </footer>
+    <script src="script.js"></script>
+   
+</body>
+</html>

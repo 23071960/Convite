@@ -1,0 +1,78 @@
+/* Estilos para telas maiores, como desktops */
+body, html {
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Verdana";
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha os itens à esquerda e à direita */
+    height: 50px;
+    background-color: rgb(29, 29, 141);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabeçalho__titulo {
+    flex: 1; /* Ocupa o espaço disponível no centro */
+    text-align: center;
+}
+
+.cabeçalho__conteudo {
+   
+    margin-right: 20px; /* Adicione uma margem à direita para criar espaço */
+    font-size: 15px;
+    border: 2px;
+    border-color: bisque;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%; /* Defina a altura do contêiner do vídeo como 100% da tela */
+    background-color: aquamarine;
+}
+
+#meu-video {
+    width: auto; /* Mantenha a largura original do vídeo */
+    height: 100%; /* Defina a altura do vídeo como 100% da tela */
+}
+
+.rodapé {
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgb(202, 142, 52 0.1);
+    font-size: 40px;
+    text-align: center;
+    height: 100%;
+    border:10px;
+
+}
+.rodapé__controle{   
+    background-color: rgb(24, 19, 13);
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* Estilos para telas menores, como o iPhone 12 */
+@media screen and (max-width: 1024px) {
+    .cabeçalho {
+        font-size: 25px;
+    }
+    .rodapé {
+        font-size: 24px;
+    }
+    .cabeçalho__conteudo{
+        display: none;
+    }
+}
+
